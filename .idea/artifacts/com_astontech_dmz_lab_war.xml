@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="com.astontech.dmz.lab:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="com.astontech.dmz.lab-1.0.war">
+      <element id="artifact" artifact-name="com.astontech.dmz.lab:war exploded" />
+    </root>
+  </artifact>
+</component>
