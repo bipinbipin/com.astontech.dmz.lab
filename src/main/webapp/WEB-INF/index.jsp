@@ -2,7 +2,7 @@
 <%--<%@include file="includes/navbar.jsp" %>--%>
 
 
-    <form:form class="form-horizontal" modelAttribute="user" action="/" method="post">
+    <form:form class="form-horizontal" modelAttribute="user" action="/user" method="post">
 
         UserName: <form:input path="name" />
         <br>

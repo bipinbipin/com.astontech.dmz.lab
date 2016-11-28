@@ -20,8 +20,8 @@ public class SeedData implements ApplicationListener<ContextRefreshedEvent> {
 
     private Logger log = Logger.getLogger(SeedData.class);
 
-    @Value("${seed.database}")
-    private boolean seedDb;
+//    @Value("${seed.database}")
+    private boolean seedDb = true;
 
     @Override
     public void onApplicationEvent(ContextRefreshedEvent event) {

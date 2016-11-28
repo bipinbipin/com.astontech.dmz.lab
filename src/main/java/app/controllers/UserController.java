@@ -22,17 +22,17 @@ public class UserController {
     @Autowired
     private UserRepository userRepository;
 
-    @Value("${middle.tier.resource.url}")
-    private String ResourceURL;
+//    @Value("${middle.tier.resource.url}")
+    private String ResourceURL = "http://middle.hrapp.com:9000/api/user/";
 
-    @RequestMapping("/")
+    @RequestMapping("/user")
     public String indexPage(Model model) {
         model.addAttribute("user", new User());
 
         return "index";
     }
 
-    @RequestMapping(value="/", method = RequestMethod.POST)
+    @RequestMapping(value="/user", method = RequestMethod.POST)
     public String userPost(User user, Model model){
         log.info(user.toString());
         //User foundUser = userRepository.findByName(user.getName());
